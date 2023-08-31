@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/Galinha-Pintadinha-2-1012x1024.png">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="all">
+      <div class="texto">
+        <p class="aspas">"</p>
+        <p id="meuParagrafo"></p>
+        <button onclick="atualizarElemento()"> <img src="./img/Galinha-Pintadinha-2-1012x1024.png" alt="galinha" width="300px"></button>
+      </div>
+    </div>
+    <div class="criadores">
+        <ul class="criadores-ul">
+            <li><a href="https://github.com/pedroh1607">Pedro h</a></li>
+            <li><a href="https://github.com/pedroh1607">pedro m</a></li>
+            <li><a href="https://github.com/pedroh1607">kauã</a></li>
+            <li><a href="https://github.com/pedroh1607">marcos p</a></li>
+            <li><a href="https://github.com/pedroh1607">caynã</a></li>
+            <li><a href="https://github.com/pedroh1607">analu</a></li>
+            <li><a href="https://github.com/pedroh1607">marcio g</a></li>
+        </ul>
+      
+    </div>
+
+    <script>
+      // feito com o amigo gepeto :)
+      // Carrega o conteúdo do arquivo e atualiza o parágrafo com o conteúdo
+      fetch("frases.txt")
+        .then((response) => response.text())
+        .then((data) => {
+          // Divide o conteúdo do arquivo em um array usando uma quebra de linha como delimitador
+          const frases = data.split("\n");
+
+          // Seleciona o elemento <p> pelo seu id
+          const paragrafo = document.getElementById("meuParagrafo");
+
+          // Escolha uma frase aleatória do array (você pode usar Math.random() para isso)
+          const fraseAleatoria =
+            frases[Math.floor(Math.random() * frases.length)];
+
+          // Atualiza o conteúdo do parágrafo com a frase aleatória
+          paragrafo.textContent = fraseAleatoria;
+        })
+        .catch((error) => {
+          console.error("Ocorreu um erro ao carregar o arquivo:", error);
+        });
+        function atualizarElemento() {
+        // Obtenha uma referência ao elemento pelo seu id
+        location.reload();
+      }
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all{
+    width: 98%;
+    top: 30%;
+    position: absolute;
+}
+.texto{
+    background-color:bisque;
+    border:3px solid  black;*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: 0px solid;
+    background: transparent;
+    cursor: pointer;
+}
+button {
+    /* Defina o estado inicial da transformação (sem movimento) */
+    transform: translateX(0);
+    transition: transform 0.2s; /* Adicione uma transição suave para suavizar o efeito */
+  }
+  
+  /* Quando o elemento estiver ativo (clicado), aplique a animação */
+  button:active {
+    animation: shake 0.2s ease;
+  }
+  
+  /* Defina os keyframes da animação */
+  @keyframes shake {
+    0% { transform: translateX(0); } /* Estado inicial (sem movimento) */
+    25% { transform: translateX(-5px); } /* Mova 5 pixels para a esquerda */
+    50% { transform: translateX(5px); } /* Mova 5 pixels para a direita */
+    75% { transform: translateX(-5px); } /* Mova 5 pixels para a esquerda novamente */
+    100% { transform: translateX(5px); } /* Mova 5 pixels para a direita novamente */
+  }
+.all{
+    width: 98%;
+    top: 30%;
+    position: absolute;
+}
+.texto{
+    background-color:bisque;
+    border:3px solid  black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+.aspas{
+    font-size: 150px;
+    font-family: 'Libre Baskerville', serif;
+    position:relative;
+    font-weight: 100;
+}
+.criadores{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+}
+.criadores-ul{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    font-weight: 550; 
+    
+}
+.criadores a{
+    color: rgb(210, 184, 150);
+    text-transform: capitalize;
+}
+#meuParagrafo{
+    font-size: 40px;
+}
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+.aspas{
+    font-size: 150px;
+    font-family: 'Libre Baskerville', serif;
+    position:relative;
+    font-weight: 100;
+}
+.criadores{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+}
+.criadores-ul{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    font-weight: 550; 
+    
+}
+.criadores a{
+    color: rgb(210, 184, 150);
+    text-transform: capitalize;
+}
