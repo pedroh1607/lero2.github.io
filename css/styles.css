@@ -121,7 +121,7 @@ button {
     color: rgb(210, 184, 150);
     text-transform: capitalize;
 }
-@media (min-width: 700px) {
+@media (min-width: 1800px) {
     .criadores{
     position: absolute;
     top: 70%;
