@@ -13,7 +13,8 @@
       <div class="texto">
         <p class="aspas">"</p>
         <p id="meuParagrafo"></p>
-        <button onclick="atualizarElemento()"><img src="./img/Galinha-Pintadinha-2-1012x1024.png" alt="galinha" width="300px"></button>
+        <button onclick="atualizarElemento()" id="myButton"><img src="./img/Galinha-Pintadinha-2-1012x1024.png" alt="galinha" width="300px"></button>
+        <audio id="myAudio" src="./audio/som.mp3"></audio>
       </div>
     </div>
     <div class="criadores">
@@ -31,7 +32,7 @@
     <script>
       // feito com o amigo gepeto :)
       // Carrega o conteúdo do arquivo e atualiza o parágrafo com o conteúdo
-      fetch("frases.txt")
+        fetch("frases.txt")
         .then((response) => response.text())
         .then((data) => {
           // Divide o conteúdo do arquivo em um array usando uma quebra de linha como delimitador
@@ -47,13 +48,17 @@
           // Atualiza o conteúdo do parágrafo com a frase aleatória
           paragrafo.textContent = fraseAleatoria;
         })
-        .catch((error) => {
-          console.error("Ocorreu um erro ao carregar o arquivo:", error);
-        });
-        function atualizarElemento() {
+         function atualizarElemento() {
         // Obtenha uma referência ao elemento pelo seu id
         location.reload();
-      }
+        }
+        var button = document.getElementById("myButton");
+        var audio = document.getElementById("myAudio");
+
+        button.addEventListener("click", function () {
+          audio.play(); // Iniciar a reprodução do áudio
+        });
+        
     </script>
     
   </body>
