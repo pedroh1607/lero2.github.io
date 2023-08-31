@@ -120,3 +120,9 @@ button {
     color: rgb(210, 184, 150);
     text-transform: capitalize;
 }
+@media (max-width:600px){
+	/* Estilizações CSS */
+    .aspas{
+    font-size: 100px;
+        }
+    }
