@@ -75,7 +75,7 @@ button {
 }
 .criadores{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 80px;
 }
 .criadores-ul{
@@ -105,26 +105,30 @@ button {
     position:relative;
     font-weight: 100;
 }
-.criadores{
-    position: absolute;
-    top: 50%;
-    left: 80px;
-}
-.criadores-ul{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    font-weight: 550; 
-    
-}
-.criadores a{
-    color: rgb(210, 184, 150);
-    text-transform: capitalize;
-}
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .criadores{
     position: absolute;
-    top: 10px;
+    top: 70%;
     left: 80px;
     }
+    .criadores-ul{
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        font-weight: 550; 
+        }
+}
+
+@media (max-width: 300px) {
+    .criadores{
+    position: absolute;
+    top: 70%;
+    left: 80px;
+    }
+    .criadores-ul{
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        font-weight: 550; 
+        }
 }
