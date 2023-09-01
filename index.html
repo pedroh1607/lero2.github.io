@@ -48,7 +48,7 @@
 
           // Escolha uma frase aleatória do array (você pode usar Math.random() para isso)
           
-        }).then() => {
+        }).then( () => {
           atualizarElemento()
         }
          function atualizarElemento() {
@@ -58,7 +58,7 @@
             frases[Math.floor(Math.random() * frases.length)];
           paragrafo.textContent = fraseAleatoria;
         //location.reload();
-        }
+        })
         var button = document.getElementById("myButton");
         var audio = document.getElementById("myAudio");
 
