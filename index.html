@@ -35,6 +35,7 @@
       let frases
       let paragrafo
       let fraseAleatoria
+      let sorteio = false
       
         fetch("frases.txt")
         .then((response) => response.text())
@@ -51,8 +52,10 @@
          function atualizarElemento() {
         // Obtenha uma referência ao elemento pelo seu id
            // Atualiza o conteúdo do parágrafo com a frase aleatória
+           if (sorteio==true) {
            fraseAleatoria =
             frases[Math.floor(Math.random() * frases.length)];
+           }
           paragrafo.textContent = fraseAleatoria;
         //location.reload();
         }
