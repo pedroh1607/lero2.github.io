@@ -50,7 +50,7 @@
           
         }).then( () => {
           atualizarElemento()
-        }
+        })
          function atualizarElemento() {
         // Obtenha uma referência ao elemento pelo seu id
            // Atualiza o conteúdo do parágrafo com a frase aleatória
@@ -58,7 +58,7 @@
             frases[Math.floor(Math.random() * frases.length)];
           paragrafo.textContent = fraseAleatoria;
         //location.reload();
-        })
+        }
         var button = document.getElementById("myButton");
         var audio = document.getElementById("myAudio");
 
