@@ -35,7 +35,7 @@
       let frases
       let paragrafo
       let fraseAleatoria
-      atualizarElemento()
+      
       
         fetch("frases.txt")
         .then((response) => response.text())
@@ -48,7 +48,9 @@
 
           // Escolha uma frase aleatória do array (você pode usar Math.random() para isso)
           
-        })
+        }).then() => {
+          atualizarElemento()
+        }
          function atualizarElemento() {
         // Obtenha uma referência ao elemento pelo seu id
            // Atualiza o conteúdo do parágrafo com a frase aleatória
