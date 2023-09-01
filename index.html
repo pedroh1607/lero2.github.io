@@ -32,14 +32,17 @@
     <script>
       // feito com o amigo gepeto :)
       // Carrega o conteúdo do arquivo e atualiza o parágrafo com o conteúdo
+      let frases
+      let paragrafo
+      
         fetch("frases.txt")
         .then((response) => response.text())
         .then((data) => {
           // Divide o conteúdo do arquivo em um array usando uma quebra de linha como delimitador
-          const frases = data.split("\n");
+          frases = data.split("\n");
 
           // Seleciona o elemento <p> pelo seu id
-          const paragrafo = document.getElementById("meuParagrafo");
+          paragrafo = document.getElementById("meuParagrafo");
 
           // Escolha uma frase aleatória do array (você pode usar Math.random() para isso)
           
