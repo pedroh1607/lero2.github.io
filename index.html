@@ -42,15 +42,15 @@
           const paragrafo = document.getElementById("meuParagrafo");
 
           // Escolha uma frase aleatória do array (você pode usar Math.random() para isso)
-          const fraseAleatoria =
-            frases[Math.floor(Math.random() * frases.length)];
-
-          // Atualiza o conteúdo do parágrafo com a frase aleatória
-          paragrafo.textContent = fraseAleatoria;
+          
         })
          function atualizarElemento() {
         // Obtenha uma referência ao elemento pelo seu id
-        location.reload();
+           // Atualiza o conteúdo do parágrafo com a frase aleatória
+           let fraseAleatoria =
+            frases[Math.floor(Math.random() * frases.length)];
+          paragrafo.textContent = fraseAleatoria;
+        //location.reload();
         }
         var button = document.getElementById("myButton");
         var audio = document.getElementById("myAudio");
