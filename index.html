@@ -41,7 +41,7 @@
         .then((response) => response.text())
         .then((data) => {
           // Divide o conteúdo do arquivo em um array usando uma quebra de linha como delimitador
-          frases = data.split("\n");
+          frases = data.split("\n\n\n");
 
           // Seleciona o elemento <p> pelo seu id
           paragrafo = document.getElementById("meuParagrafo");
